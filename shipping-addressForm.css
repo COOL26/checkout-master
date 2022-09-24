@@ -1,0 +1,72 @@
+#shipping-address-form {
+  margin-top: 54px;
+}
+
+#country {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px 0 14px 48px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 0.2px solid gray;
+  color: gray;
+  letter-spacing: 1.2px;
+}
+
+select#country {
+  background-image: url(./apartment.png);
+  background-position: 10px 13px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  font-size: 14px;
+  padding: 14px 0 14px 48px;
+}
+
+input#city {
+  background-image: url(./apartment.png);
+  background-position: 10px 13px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+input#address {
+  background-image: url(./home.png);
+  background-position: 10px 13px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+input#name {
+  background-image: url(./profile.png);
+  background-position: 10px 13px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+input#postalCode {
+  background-image: url(./postal.png);
+  background-position: 10px 13px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  font-size: 14px;
+}
+
+.box.specific {
+  padding-left: 21px;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+#save {
+  margin-right: 8px;
+}

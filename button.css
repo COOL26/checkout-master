@@ -1,0 +1,19 @@
+#btn-box {
+  text-align: right;
+}
+
+#btn {
+  background-color: rgb(252, 105, 52);
+  padding: 16px 42px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  border-radius: 8px;
+  margin-top: 28px;
+  border: transparent;
+}
+
+#btn:hover {
+  background-color: rgb(228, 80, 26);
+  cursor: pointer;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="personal-InfoForm.css" />
+    <link rel="stylesheet" href="shipping-addressForm.css" />
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+    <script src="app.js" defer></script>
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: rgb(101, 100, 100)" id="main-heading">Checkout</h1>
+      <div class="external-most-container">
+        <section class="grey-box">
+          <ul class="items">
+            <li class="bag">
+              <img src="photo1.png" alt="Vintage Backbag" />
+              <div class="inner-container">
+                <div>
+                  <h3 style="font-size: 14px">Vintage Backbag</h3>
+                  <p style="color: coral; font-size: 14px; font-weight: bold">
+                    $54.99
+                    <small
+                      style="
+                        text-decoration: line-through;
+                        color: rgb(101, 100, 100);
+                      "
+                      >$94.99</small
+                    >
+                  </p>
+                </div>
+                <div class="counter">
+                  <span onclick="incrementProduct1()" class="plus">+</span>
+                  <span class="num" id="product1">1</span>
+                  <span onclick="decrementProduct1()" class="minus">-</span>
+                </div>
+              </div>
+            </li>
+            <li class="shoes">
+              <img src="photo2.png" alt="Levi Shoes" />
+              <div class="inner-container">
+                <div>
+                  <h3 style="font-size: 14px">Levi Shoes</h3>
+                  <p style="color: coral; font-size: 14px; font-weight: bold">
+                    $74.99
+                    <small
+                      style="
+                        text-decoration: line-through;
+                        color: rgb(101, 100, 100);
+                      "
+                      >$124.99</small
+                    >
+                  </p>
+                </div>
+                <div class="counter">
+                  <span onclick="incrementProduct2()" class="plus">+</span>
+                  <span class="num" id="product2">1</span>
+                  <span onclick="decrementProduct2()" class="minus">-</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <section class="price-info">
+            <hr style="border: 0.4 solid rgb(101, 100, 100)" />
+            <br />
+            <div class="shipping">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <br />
+            <hr style="border: 0.4 solid rgb(101, 100, 100)" />
+            <br />
+            <div class="total">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+            <br />
+          </section>
+        </section>
+      </div>
+    </header>
+    <main>
+      <h1 style="color: rgb(101, 100, 100)" id="main-heading" class="mobile">Checkout</h1>
+      <h2 style="color: rgb(48, 48, 48)">Contact Information</h2>
+      <form class="personal-info">
+        <div class="box">
+          <div class="labels">
+            <label for="email">E-mail</label>
+          </div>
+          <div>
+            <input type="text" id="email" name="email" placeholder="Enter your email..." required/>
+          </div>
+        </div>
+        <div class="box">
+          <div class="labels">
+            <label for="phone">Phone</label>
+          </div>
+          <div>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone..." required/>
+          </div>
+        </div>
+      <!-- </form> -->
+      <section id="shipping-address-form">
+        <h2>Shipping address</h2>
+        <!-- <form action="" class="shipping-info personal-info"> -->
+          <div class="box">
+            <div class="labels">
+              <label for="name">Full name</label>
+            </div>
+            <div>
+              <input type="text" id="name" name="username" placeholder="Rodney Cotton" required/>
+            </div>
+          </div>
+          <div class="box">
+            <div class="labels">
+              <label for="address">Address</label>
+            </div>
+            <div>
+              <input type="text" id="address" name="address" placeholder="Your address..." required/>
+            </div>
+          </div>
+          <div class="box">
+            <div class="labels">
+              <label for="city">City</label>
+            </div>
+            <div>
+              <input type="text" id="city" name="city" placeholder="Your city..." required/>
+            </div>
+          </div>
+          <div class="flex-box">
+            <div class="box">
+              <div class="labels">
+                <label for="country">Country</label>
+              </div>
+              <div>
+                <select id="country" name="country" required>
+                  <option>Your Country..</option>
+                  <option>India</option>
+                  <option>England</option>
+                  <option>USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="box specific">
+              <div class="labels">
+                <label for="postalCode">Postal Code</label>
+              </div>
+              <div>
+                <input type="text" id="postalCode" name="postalCode" placeholder="243601" required/>
+              </div>
+            </div>
+          </div>
+          <div class="box" id="flex-container">
+            <div class="labels">
+              <label for="save">Save this information for next time</label>
+            </div>
+            <div>
+              <input type="checkbox" id="save" />
+            </div>
+          </div>
+          <div id="btn-box">
+            <button type="submit" id="btn" onclick="success()">Continue</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
