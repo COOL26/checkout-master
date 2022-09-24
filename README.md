@@ -57,4 +57,4 @@ Just click on this link: https://cool26.github.io/checkout-master/
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/COOL26)
+- GitHub [@COOL26](https://github.com/COOL26)
